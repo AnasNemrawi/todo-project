@@ -1,23 +1,31 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+</head>
 <html>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
-    <head>
-        <title>todo</title>
-    </head>
+
     <body>
         <header>
             <nav>
-                <img src="./todo logo.png" height="75px" width="75px" alt="todo logo">
-                <a href="/index.html">home</a>
-                <a href="/about.html">about</a>
+                <img src="./todo logo.png" alt="todo logo" height="40px" width="40px" float: left>
+                <a href="index.html">home</a>
+                <a href="about.html">about</a>
             </nav>
         </header>
         <main>
-            <h3>Anas Nemrawi</h3>
-        <img src="./smily.png" height="150px" width="150px" alt="smily photo">
+            <h2>Anas Nemrawi</h2>
+        <div class="smily">
+            <img src="./smily.png"   position: fixed top: 10% left: 20% right: auto; height="150px" width="150px">
+        </div>
             
-        <form >
+        <h3> contact me</h3>
+        <form  >
             <label for="">Name:</label>
             <input type="text">
             <br>
@@ -29,9 +37,7 @@
             <br>
 
             <label for="">message:</label>
-            <input type="text">
-            <br>
-            <textarea name="message" id="message" cols="50" rows="4"></textarea>
+            <textarea name="message" id="message" cols="50" rows="4" ></textarea>
             <br>
             <button type="button">send</button>
         

@@ -1,0 +1,17 @@
+.parent div {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    background-color: aliceblue;
+}
+.dev1{
+    background-color: aqua;
+}
+
+.dev2{
+    background-color: black;
+
+}
+.dev3 div{
+    background-color: brown;
+}
