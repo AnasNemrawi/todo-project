@@ -1,4 +1,5 @@
 //day 5 lap 
+
 let Name, Age, Gender;
 
 Name = prompt("Please Enter your  name");
@@ -27,22 +28,23 @@ if ( !Wellcom ) {
 
 }
 
-/*
-//another way
 
-function testGender() {
-   
-    if ( Gender.toLocaleLowerCase ()=== "female") { 
-        alert("Wellcom Ms " + Name);
+
+//day 6 lap 
+
+function askQuestion(question, answers) {
+    let response = prompt(question + ' (Yes/No)');
+    if (response === null || response === '') {
+      answers.push('invalid');
+    } else {
+      answers.push(response.toLowerCase());
     }
-    else if (Gender.toLocaleLowerCase() === "male") { 
-        alert("Wellcom Mr " + Name); 
-    }
-    else {
-         alert("Wellcom " + Name);
-    }
-}
-if ( !Wellcom ) {
-    testGender();
-}
-*/
+  }
+  
+let answers = [];
+  
+askQuestion('are you from jordan?', answers);
+askQuestion('are you enjoying this site?', answers);
+askQuestion('do you like coding?', answers);
+
+console.log('Answers:', answers);
